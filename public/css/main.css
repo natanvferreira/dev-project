@@ -1,0 +1,72 @@
+.select2 {
+    width: 100% !important;
+}
+
+.load_protection {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: wait;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+}
+
+.load_protection .animation {
+    animation: spin 0.75s linear infinite;
+    border: 0.5em solid rgb(0, 0, 0);
+    border-radius: 50%;
+    border-top-color: rgb(255, 255, 255);
+    height: 6em;
+    width: 6em;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+table {
+    table-layout: auto !important;
+}
+
+th,
+td,
+thead th,
+tbody td,
+tfoot td,
+tfoot th {
+    width: auto !important;
+}
+
+.back-to-top {
+    background-color: #38322e;
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: #d9a000;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+}
+
+.back-to-top::after {
+    content: '▲';
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 10px;
+}
