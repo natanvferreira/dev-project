@@ -9,7 +9,7 @@ DevProject é um projeto desenvolvido em PHP 8.1.0 utilizando SQLite como banco 
 1. Clone este repositório para o seu ambiente local.
 
 ```
-git clone https://github.com/seu-usuario/devproject.git
+git clone https://github.com/natanvferreira/dev-project.git
 ```
 
 2. Navegue até o diretório do projeto.
@@ -30,8 +30,10 @@ composer install
 
 ```
 DB_CONNECTION=sqlite
-DB_DATABASE=/caminho/absoluto/do/banco/de/dados/database.sqlite
+DB_DATABASE="C:/Users/user/devproject/database/database.sqlite"
 ```
+
+Se caso o arquivo não existir, o terminar vai perguntar se você deseja criar, basta digitar: yes
 
 Certifique-se de fornecer o caminho absoluto para o arquivo do banco de dados SQLite.
 
@@ -54,5 +56,9 @@ php artisan serve
 ```
 
 Agora, você pode acessar o projeto em seu navegador através do URL fornecido pelo comando acima.
+
+Caso apareça um tela com o erro: No application encryption key has been specified.
+Basta clicar no botão: Generate app key
+E depois dar F5
 
 Se tudo ocorreu certo, você irá conseguir logar usando como email: admin@admin.com e a senha: 123123
